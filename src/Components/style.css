@@ -1,0 +1,63 @@
+header{
+    height: 60px;
+    border-bottom: 1px solid dimgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.appTitle{
+    font-size: 25px;
+    color:blueviolet;
+}
+
+.loginButton{
+    font-size: 20px;
+
+}
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+.intro-text{
+    padding: 25px;
+    width: 30%;
+
+}
+.intro-image{
+    width: 30%;
+}
+
+.intro-image img{
+   
+    width: 100%;
+}
+
+.intro-button{
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.form{
+    border: 1px solid dimgray;
+    padding: 50px;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.formTitle{
+    color: orange;
+    text-align: center;
+    padding: 20px;
+    cursor: default;
+    font-size: 25px;
+}

@@ -1,12 +1,14 @@
-import Alert from "./Components/Alert";
+import Calculator from "./Components/Calculator";
+import Header from "./Components/Header";
+import Intro from "./Components/Intro";
+import Login from "./Components/Login";
 
 function App() {
   return (
-    <div>
-      <Alert>
-        Hello <span>World</span>
-      </Alert>
-    </div>
+    <>
+      <Header></Header>
+      <Intro></Intro>
+    </>
   );
 }
 
