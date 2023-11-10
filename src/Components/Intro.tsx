@@ -1,4 +1,4 @@
-import "./style.css";
+import "/src/assets/style.css";
 
 const Intro = () => {
   return (
@@ -10,7 +10,7 @@ const Intro = () => {
             <h3>Calculate your recommended daily calorie intake!</h3>
             <p>
               If you're having troubles losing maintaining or gaining weight
-              access our calculator to get some help.{" "}
+              access our calculator to get some help.
             </p>
             <button className="intro-button">Calculate Now</button>
           </div>
