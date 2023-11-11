@@ -3,10 +3,10 @@ import "/src/assets/style.css";
 const Header = () => {
   return (
     <>
-      <header>
-        <div className="appTitle">HealthApp</div>
-        <div className="loginButton">Login</div>
-      </header>
+      <div className="header">
+        <div className="logo">HealthApp</div>
+        <div className="loginLabel">Login</div>
+      </div>
     </>
   );
 };

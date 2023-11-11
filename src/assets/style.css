@@ -1,63 +1,73 @@
-header{
-    height: 60px;
-    border-bottom: 1px solid dimgray;
+html{
+    position: relative;
+    height: 100vh;
+}
+
+html::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image:  linear-gradient(rgba(0,0,0,0.527),rgba(0,0,0,0.5)), url("./images/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;  
+    background-position: top center; 
+}
+
+.colors{
+    color:#FF7733;
+}
+
+.header{
+    color: white;
     display: flex;
+    padding: 10px 20px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    position: relative;
+}
+.logo{
+    color: #FF7733;
+    font-weight: bold;
+    font-size: 30px;
 }
 
-.appTitle{
-    font-size: 25px;
-    color:blueviolet;
+h1{
+    font-size: 42px;
+}
+.loginLabel{
+    font-size: 26px;
+    font-family: Poppins;
 }
 
-.loginButton{
-    font-size: 20px;
-
-}
 .intro{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
+    font-family: Poppins;
+    position: relative;
+    color: white;
+    padding: 1.25rem;
 }
+
 .intro-text{
-    padding: 25px;
-    width: 30%;
-
-}
-.intro-image{
-    width: 30%;
-}
-
-.intro-image img{
-   
-    width: 100%;
+    padding: 1.75rem 0rem;
 }
 
 .intro-button{
-    border: none;
-    background-color: blueviolet;
-    color: white;
-    padding: 10px;
-    font-weight: bold;
-    border-radius: 5px;
+    text-align: end;
+    margin: 1.5rem 0.25rem;
 }
 
-.form{
-    border: 1px solid dimgray;
-    padding: 50px;
-    width: fit-content;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
+button{
+
+    background-color: transparent;
+    color: #FF7733;
+    border: 2px solid #FF7733;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 
-.formTitle{
-    color: orange;
-    text-align: center;
-    padding: 20px;
-    cursor: default;
-    font-size: 25px;
+@font-face {
+    font-family: "Poppins";
+    src: url("./fonts/Poppins/Poppins-Regular.ttf");
 }
