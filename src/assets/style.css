@@ -1,19 +1,18 @@
-html{
+body{
+    background:url("./images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
     position: relative;
-    height: 100vh;
 }
 
-html::before{
-    content: '';
+body::before {
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-image:  linear-gradient(rgba(0,0,0,0.527),rgba(0,0,0,0.5)), url("./images/background.jpg");
-    background-size: cover;
-    background-attachment: fixed;  
-    background-position: top center; 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    pointer-events: none;
 }
 
 .colors{
@@ -23,48 +22,115 @@ html::before{
 .header{
     color: white;
     display: flex;
-    padding: 10px 20px;
+    margin: auto 0;
+    padding: 0.5rem 0.5rem;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position: sticky;
+    z-index: 1;
+    background-color: dimgray;
+    top: 0;
+
+    @media (min-width:50rem) {
+        justify-content: space-evenly;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
+
 .logo{
     color: #FF7733;
     font-weight: bold;
     font-size: 30px;
 }
 
-h1{
-    font-size: 42px;
-}
-.loginLabel{
-    font-size: 26px;
-    font-family: Poppins;
+
+.header button{
+    font-size: 20px;
 }
 
-.intro{
-    font-family: Poppins;
+.loginLabel:hover{
+    color: #FF7733;
+    text-decoration: underline;
+}
+
+.mycontainer{
     position: relative;
+    font-family: Poppins;
     color: white;
-    padding: 1.25rem;
+    padding: 1rem 1rem ;
+
+    @media (min-width:50rem) {
+        max-width: 50rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.intro-title{
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .intro-text{
-    padding: 1.75rem 0rem;
+    color: white;
+    margin-bottom: 7rem;
+    opacity: 0.8;
 }
 
 .intro-button{
     text-align: end;
-    margin: 1.5rem 0.25rem;
+}
+
+.calculator-text{
+    padding-top: 2rem;
+    color: white;
+}
+
+
+.button-group{
+    margin: 2rem 0;
+    display: block;
+}
+
+.inputs{
+    text-align: center;
+}
+
+.input{
+    padding: 0.5rem 0;
+}
+
+.yo{
+    text-align: center;
+    filter: invert(100%);
+}
+
+
+
+/* ----------------------------  */
+h1{
+    font-size: 42px;
+}
+
+h2{
+    opacity: 0.6;
+    padding-top: 3rem;
 }
 
 button{
-
     background-color: transparent;
     color: #FF7733;
     border: 2px solid #FF7733;
     padding: 0.5rem;
     border-radius: 0.5rem;
+    
+}
+
+button:hover{
+    background-color: white;
+    text-decoration: underline;
 }
 
 @font-face {

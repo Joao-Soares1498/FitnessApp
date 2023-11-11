@@ -5,7 +5,7 @@ const Header = () => {
     <>
       <div className="header">
         <div className="logo">HealthApp</div>
-        <div className="loginLabel">Login</div>
+        <button>Login</button>
       </div>
     </>
   );
